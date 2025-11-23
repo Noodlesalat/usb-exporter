@@ -5,8 +5,8 @@
 
   outputs = { ... }: rec {
     nixosModules = rec {
-      verteiler = import ./default.nix;
-      default = verteiler;
+      usbExporter = import ./default.nix;
+      default = usbExporter;
     };
     nixosModule = nixosModules.default;
   };
